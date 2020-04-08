@@ -6,8 +6,9 @@ require_relative '../lib/fancy_dance.rb'
 
 
 class Dancer
-  include Dance       #=> "include" - These are instance methods
-  extend MetaDancing  #=> "extend"  - These are class methods
+  include Dance      
+  extend MetaDancing
+  
   attr_accessor :name
   def initialize(name)
     @name = name
